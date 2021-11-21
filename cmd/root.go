@@ -39,7 +39,7 @@ var (
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:          "ebk",
-	Short:        "ebk is a tiny tool for ebook.",
+	Short:        "ebk is a tiny tool for ebook",
 	Long:         `ebk is a tiny tool for ebook.`,
 	Version:      version.Version,
 	SilenceUsage: true,
