@@ -55,7 +55,7 @@ var lsCmd = &cobra.Command{
 		}
 		if delimiter == "\\t" {
 			// tab
-			delimiter = ""
+			delimiter = "\t"
 		}
 
 		fi, err := os.Stat(dir)
