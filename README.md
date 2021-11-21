@@ -39,6 +39,6 @@ PostgreSQL Q&A実録  /path/to/books/postgresql-qanda-jitsuroku.pdf
 ## Supported ebook formats
 
 - PDF
-    - with https://github.com/pdfcpu/pdfcpu
+    - implemented using https://github.com/pdfcpu/pdfcpu
 - EPUB
-    - with https://github.com/taylorskalyo/goreader
+    - implemented using https://github.com/taylorskalyo/goreader
