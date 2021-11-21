@@ -83,7 +83,7 @@ var lsCmd = &cobra.Command{
 
 			mtype, err := mimetype.DetectFile(p)
 			if err != nil {
-				cmd.PrintErr(ecf("MIME type detect error \"%s\":%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), pp))
+				cmd.Print(ecf("MIME type detect error \"%s\":%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), pp))
 				continue
 			}
 			t := mtype.String()
@@ -97,12 +97,12 @@ var lsCmd = &cobra.Command{
 				pctx, err := api.ReadContext(f, pdfcpu.NewDefaultConfiguration())
 				if err != nil {
 					_ = f.Close()
-					cmd.PrintErr(ecf("PDF parse error \"%s\":%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), pp))
+					cmd.Print(ecf("PDF parse error \"%s\":%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), pp))
 					continue
 				}
 				if err = validate.XRefTable(pctx.XRefTable); err != nil {
 					_ = f.Close()
-					cmd.PrintErr(ecf("PDF parse error \"%s\":%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), pp))
+					cmd.Print(ecf("PDF parse error \"%s\":%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), pp))
 					continue
 				}
 				if pctx.Title != "" {
@@ -112,7 +112,7 @@ var lsCmd = &cobra.Command{
 			case "application/epub+zip":
 				rc, err := epub.OpenReader(p)
 				if err != nil {
-					cmd.PrintErr(ecf("EPUB parse error \"%s\":%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), pp))
+					cmd.Print(ecf("EPUB parse error \"%s\":%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), pp))
 					continue
 				}
 				book := rc.Rootfiles[0]
