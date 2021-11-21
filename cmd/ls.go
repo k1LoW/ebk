@@ -35,7 +35,10 @@ import (
 	"github.com/taylorskalyo/goreader/epub"
 )
 
-var withPath bool
+var (
+	withPath  bool
+	delimiter string
+)
 
 // lsCmd represents the ls command
 var lsCmd = &cobra.Command{
@@ -49,6 +52,10 @@ var lsCmd = &cobra.Command{
 			dir = "."
 		} else {
 			dir = args[0]
+		}
+		if delimiter == "\\t" {
+			// tab
+			delimiter = ""
 		}
 
 		fi, err := os.Stat(dir)
@@ -83,7 +90,7 @@ var lsCmd = &cobra.Command{
 
 			mtype, err := mimetype.DetectFile(p)
 			if err != nil {
-				cmd.Print(ecf("MIME type detect error \"%s\":%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), pp))
+				cmd.Print(ecf("MIME type detect error \"%s\"%s%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), delimiter, pp))
 				continue
 			}
 			t := mtype.String()
@@ -97,12 +104,12 @@ var lsCmd = &cobra.Command{
 				pctx, err := api.ReadContext(f, pdfcpu.NewDefaultConfiguration())
 				if err != nil {
 					_ = f.Close()
-					cmd.Print(ecf("PDF parse error \"%s\":%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), pp))
+					cmd.Print(ecf("PDF parse error \"%s\"%s%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), delimiter, pp))
 					continue
 				}
 				if err = validate.XRefTable(pctx.XRefTable); err != nil {
 					_ = f.Close()
-					cmd.Print(ecf("PDF parse error \"%s\":%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), pp))
+					cmd.Print(ecf("PDF parse error \"%s\"%s%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), delimiter, pp))
 					continue
 				}
 				if pctx.Title != "" {
@@ -112,7 +119,7 @@ var lsCmd = &cobra.Command{
 			case "application/epub+zip":
 				rc, err := epub.OpenReader(p)
 				if err != nil {
-					cmd.Print(ecf("EPUB parse error \"%s\":%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), pp))
+					cmd.Print(ecf("EPUB parse error \"%s\"%s%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), delimiter, pp))
 					continue
 				}
 				book := rc.Rootfiles[0]
@@ -125,7 +132,7 @@ var lsCmd = &cobra.Command{
 				continue
 			}
 
-			cmd.Printf("%s:%s\n", tc(title), pp)
+			cmd.Printf("%s%s%s\n", tc(title), delimiter, pp)
 		}
 
 		return nil
@@ -135,4 +142,5 @@ var lsCmd = &cobra.Command{
 func init() {
 	rootCmd.AddCommand(lsCmd)
 	lsCmd.Flags().BoolVarP(&withPath, "with-path", "", false, "show with ebook file path")
+	lsCmd.Flags().StringVarP(&delimiter, "delimiter", "d", ":", "delimiter")
 }
