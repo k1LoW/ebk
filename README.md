@@ -28,9 +28,9 @@ $ open $(ebk ls /path/to/books/ --with-path -d '\t' | peco | awk -F '\t' '{print
 ```
 
 ``` console
-QUERY> SQL                                                   IgnoreCase [5 (1/1)]
+QUERY> SQL                                            IgnoreCase [5 (1/1)]
 15時間でわかるMySQL集中講座 /path/to/books/15時間てわかる-MySQL集中講座_00.epub
-SQLパフォーマンス詳解 - 開発者のためのSQLパフォーマンスのすべて /path/to/books/S
+SQLパフォーマンス詳解 - 開発者のためのSQLパフォーマンスのすべて /path/to/books/SQLパフォ
 SQLアンチパターン   /path/to/books/oreilly-978-4-87311-589-4e.epub
 PostgreSQL Q&A実録  /path/to/books/postgresql-qanda-jitsuroku.pdf
 ??? /path/to/books/達人に学ふSQL徹底指南書 第2版.pdf
