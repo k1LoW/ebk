@@ -21,7 +21,7 @@ Go言語による並行処理:oreilly-978-4-87311-846-8e.epub
 ユニコーン企業のひみつ:oreilly-978-4-87311-946-5e.epub
 ```
 
-## Suppoted ebook formats
+## Supported ebook formats
 
 - PDF
     - with https://github.com/pdfcpu/pdfcpu
