@@ -21,14 +21,14 @@ Go言語による並行処理:oreilly-978-4-87311-846-8e.epub
 ユニコーン企業のひみつ:oreilly-978-4-87311-946-5e.epub
 ```
 
-#### Select and Open ebook using ebk and peco (macOS)
+#### Select and Open ebook using ebk and [peco](https://github.com/peco/peco) (macOS)
 
 ``` console
 $ open $(ebk ls /path/to/books/ --with-path -d '\t' | peco | awk -F '\t' '{print $2}')
 ```
 
 ``` console
-QUERY> SQL                                                   IgnoreCase [5 (1/1)]
+QUERY> SQL                                               IgnoreCase [5 (1/1)]
 15時間でわかるMySQL集中講座 /path/to/books/15時間てわかる-MySQL集中講座_00.epub
 SQLパフォーマンス詳解 - 開発者のためのSQLパフォーマンスのすべて /path/to/books/S
 SQLアンチパターン   /path/to/books/oreilly-978-4-87311-589-4e.epub
