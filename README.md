@@ -47,11 +47,10 @@ PostgreSQL Q&A実録  /path/to/books/postgresql-qanda-jitsuroku.pdf
 
 **deb:**
 
-Use [dpkg-i-from-url](https://github.com/k1LoW/dpkg-i-from-url)
-
 ``` console
 $ export EBK_VERSION=X.X.X
-$ curl -L https://git.io/dpkg-i-from-url | bash -s -- https://github.com/k1LoW/ebk/releases/download/v$EBK_VERSION/ebk_$EBK_VERSION-1_amd64.deb
+$ curl -o ebk.deb -L https://github.com/k1LoW/ebk/releases/download/v$EBK_VERSION/ebk_$EBK_VERSION-1_amd64.deb
+$ dpkg -i ebk.deb
 ```
 
 **RPM:**
@@ -63,11 +62,10 @@ $ yum install https://github.com/k1LoW/ebk/releases/download/v$EBK_VERSION/ebk_$
 
 **apk:**
 
-Use [apk-add-from-url](https://github.com/k1LoW/apk-add-from-url)
-
 ``` console
 $ export EBK_VERSION=X.X.X
-$ curl -L https://git.io/apk-add-from-url | sh -s -- https://github.com/k1LoW/ebk/releases/download/v$EBK_VERSION/ebk_$EBK_VERSION-1_amd64.apk
+$ curl -o ebk.apk -L https://github.com/k1LoW/ebk/releases/download/v$EBK_VERSION/ebk_$EBK_VERSION-1_amd64.apk
+$ apk add ebk.apk
 ```
 
 **homebrew tap:**
@@ -84,10 +82,4 @@ Download binary from [releases page](https://github.com/k1LoW/ebk/releases)
 
 ```console
 $ go get github.com/k1LoW/ebk
-```
-
-**docker:**
-
-```console
-$ docker pull ghcr.io/k1low/ebk:latest
 ```

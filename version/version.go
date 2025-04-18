@@ -4,4 +4,4 @@ package version
 const Name string = "ebk"
 
 // Version for this
-var Version = "dev"
+var Version = "0.2.1"

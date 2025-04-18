@@ -12,6 +12,7 @@ builds:
     - linux
   goarch:
     - amd64
+    - arm64
   ldflags:
     - -s -w -X github.com/k1LoW/ebk.version={{.Version}} -X github.com/k1LoW/ebk.commit={{.FullCommit}} -X github.com/k1LoW/ebk.date={{.Date}} -X github.com/k1LoW/ebk/version.Version={{.Version}}
 -
