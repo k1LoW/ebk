@@ -29,7 +29,7 @@ import (
 	"github.com/fatih/color"
 	"github.com/gabriel-vasile/mimetype"
 	"github.com/pdfcpu/pdfcpu/pkg/api"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
+	pdfmodel "github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
 	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/validate"
 	"github.com/spf13/cobra"
 	"github.com/taylorskalyo/goreader/epub"
@@ -101,13 +101,13 @@ var lsCmd = &cobra.Command{
 				if err != nil {
 					return err
 				}
-				pctx, err := api.ReadContext(f, pdfcpu.NewDefaultConfiguration())
+				pctx, err := api.ReadContext(f, pdfmodel.NewDefaultConfiguration())
 				if err != nil {
 					_ = f.Close()
 					cmd.Print(ecf("PDF parse error \"%s\"%s%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), delimiter, pp))
 					continue
 				}
-				if err = validate.XRefTable(pctx.XRefTable); err != nil {
+				if err = validate.XRefTable(pctx); err != nil {
 					_ = f.Close()
 					cmd.Print(ecf("PDF parse error \"%s\"%s%s\n", strings.ReplaceAll(err.Error(), "\n", ". "), delimiter, pp))
 					continue
