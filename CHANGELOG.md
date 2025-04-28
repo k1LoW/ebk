@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.2.3](https://github.com/k1LoW/ebk/compare/v0.2.2...v0.2.3) - 2025-04-28
+### Other Changes
+- chore(deps): bump github.com/pdfcpu/pdfcpu from 0.9.1 to 0.10.2 in the dependencies group by @dependabot in https://github.com/k1LoW/ebk/pull/12
+
 ## [v0.2.2](https://github.com/k1LoW/ebk/compare/v0.2.1...v0.2.2) - 2025-04-18
 ### Other Changes
 - Bump golang.org/x/text from 0.3.6 to 0.3.8 by @dependabot in https://github.com/k1LoW/ebk/pull/2
