@@ -4,7 +4,7 @@ go 1.23.8
 
 require (
 	github.com/fatih/color v1.18.0
-	github.com/gabriel-vasile/mimetype v1.4.9
+	github.com/gabriel-vasile/mimetype v1.4.10
 	github.com/mattn/go-colorable v0.1.14
 	github.com/pdfcpu/pdfcpu v0.11.0
 	github.com/spf13/cobra v1.9.1
@@ -23,7 +23,6 @@ require (
 	github.com/spf13/pflag v1.0.6 // indirect
 	golang.org/x/crypto v0.38.0 // indirect
 	golang.org/x/image v0.27.0 // indirect
-	golang.org/x/net v0.39.0 // indirect
 	golang.org/x/sys v0.33.0 // indirect
 	golang.org/x/text v0.25.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
