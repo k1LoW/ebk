@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.2.4](https://github.com/k1LoW/ebk/compare/v0.2.3...v0.2.4) - 2025-09-15
+### Other Changes
+- chore(deps): bump github.com/gabriel-vasile/mimetype from 1.4.9 to 1.4.10 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/16
+- chore(deps): bump the dependencies group across 1 directory with 2 updates by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/19
+- chore(deps): bump github.com/spf13/cobra from 1.9.1 to 1.10.1 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/18
+
 ## [v0.2.3](https://github.com/k1LoW/ebk/compare/v0.2.2...v0.2.3) - 2025-06-03
 ### Other Changes
 - chore(deps): bump github.com/pdfcpu/pdfcpu from 0.9.1 to 0.10.2 in the dependencies group by @dependabot in https://github.com/k1LoW/ebk/pull/12
