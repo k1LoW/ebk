@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.2.5](https://github.com/k1LoW/ebk/compare/v0.2.4...v0.2.5) - 2025-11-20
+### Other Changes
+- chore: setup tagpr labels by @k1LoW in https://github.com/k1LoW/ebk/pull/20
+- chore(deps): bump github.com/pdfcpu/pdfcpu from 0.11.0 to 0.11.1 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/22
+- chore(deps): bump golang.org/x/crypto from 0.43.0 to 0.45.0 by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/24
+
 ## [v0.2.4](https://github.com/k1LoW/ebk/compare/v0.2.3...v0.2.4) - 2025-09-15
 ### Other Changes
 - chore(deps): bump github.com/gabriel-vasile/mimetype from 1.4.9 to 1.4.10 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/16
