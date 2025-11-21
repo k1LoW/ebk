@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.2.6](https://github.com/k1LoW/ebk/compare/v0.2.5...v0.2.6) - 2025-11-21
+### Other Changes
+- chore(deps): bump github.com/gabriel-vasile/mimetype from 1.4.10 to 1.4.11 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/23
+
 ## [v0.2.5](https://github.com/k1LoW/ebk/compare/v0.2.4...v0.2.5) - 2025-11-20
 ### Other Changes
 - chore: setup tagpr labels by @k1LoW in https://github.com/k1LoW/ebk/pull/20
