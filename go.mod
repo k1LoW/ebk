@@ -4,7 +4,7 @@ go 1.24.0
 
 require (
 	github.com/fatih/color v1.18.0
-	github.com/gabriel-vasile/mimetype v1.4.12
+	github.com/gabriel-vasile/mimetype v1.4.13
 	github.com/mattn/go-colorable v0.1.14
 	github.com/pdfcpu/pdfcpu v0.11.1
 	github.com/spf13/cobra v1.10.2
