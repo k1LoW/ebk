@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.2.6](https://github.com/k1LoW/ebk/compare/v0.2.5...v0.2.6) - 2026-02-23
+### Other Changes
+- chore(deps): bump github.com/gabriel-vasile/mimetype from 1.4.10 to 1.4.11 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/23
+- chore(deps): bump actions/checkout from 5 to 6 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/26
+- chore(deps): bump the dependencies group across 1 directory with 2 updates by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/28
+- chore(deps): bump github.com/gabriel-vasile/mimetype from 1.4.12 to 1.4.13 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/29
+- chore(deps): bump goreleaser/goreleaser-action from 6 to 7 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/30
+
 ## [v0.2.5](https://github.com/k1LoW/ebk/compare/v0.2.4...v0.2.5) - 2025-11-20
 ### Other Changes
 - chore: setup tagpr labels by @k1LoW in https://github.com/k1LoW/ebk/pull/20
