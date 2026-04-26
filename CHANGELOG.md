@@ -1,5 +1,16 @@
 # Changelog
 
+## [v0.2.6](https://github.com/k1LoW/ebk/compare/v0.2.5...v0.2.6) - 2026-04-26
+### Other Changes
+- chore(deps): bump github.com/gabriel-vasile/mimetype from 1.4.10 to 1.4.11 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/23
+- chore(deps): bump actions/checkout from 5 to 6 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/26
+- chore(deps): bump the dependencies group across 1 directory with 2 updates by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/28
+- chore(deps): bump github.com/gabriel-vasile/mimetype from 1.4.12 to 1.4.13 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/29
+- chore(deps): bump goreleaser/goreleaser-action from 6 to 7 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/30
+- chore(deps): bump github.com/fatih/color from 1.18.0 to 1.19.0 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/31
+- chore(deps): bump golang.org/x/image from 0.32.0 to 0.38.0 by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/32
+- chore(deps): bump github.com/pdfcpu/pdfcpu from 0.11.1 to 0.12.0 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/33
+
 ## [v0.2.6](https://github.com/k1LoW/ebk/compare/v0.2.5...v0.2.6) - 2026-03-31
 ### Other Changes
 - chore(deps): bump github.com/gabriel-vasile/mimetype from 1.4.10 to 1.4.11 in the dependencies group by @dependabot[bot] in https://github.com/k1LoW/ebk/pull/23
