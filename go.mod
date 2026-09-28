@@ -1,6 +1,6 @@
 module github.com/k1LoW/ebk
 
-go 1.25.0
+go 1.26.8
 
 require (
 	github.com/fatih/color v1.19.0
